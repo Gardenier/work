@@ -1,0 +1,36 @@
+//
+//选项卡切换
+var tab=document.getElementById('rmtop').getElementsByTagName('a'),
+tab1=document.getElementById("normal_log"),
+tab2=document.getElementById("qrcode_log"),
+tab3=document.getElementById("message_log"),
+ul1=document.getElementById('ul1'),
+ul2=document.getElementById('ul2'),
+ul3=document.getElementById('ul3');
+tab1.onclick=function()
+{
+	tab1.style.color='black';
+	tab2.style.color='';
+	tab3.style.color='';
+	ul1.style.display='';
+	ul2.style.display='none';
+	ul3.style.display='none';
+}
+tab2.onclick=function()
+{
+	tab2.style.color='black';
+	tab1.style.color='';
+	tab3.style.color='';
+	ul1.style.display='none';
+	ul2.style.display='';
+	ul3.style.display='none';
+}
+tab3.onclick=function()
+{
+	tab3.style.color='black';
+	tab1.style.color='';
+	tab2.style.color='';
+	ul1.style.display='none';
+	ul2.style.display='none';
+	ul3.style.display='';
+}

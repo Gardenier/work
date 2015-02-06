@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+	<title>微博-随时随地发现新鲜事</title>
+	<link rel="stylesheet" href="main.css">
+ </head>
+ <body onload="autotabstart()">
+	<div id="page">
+		<div id="header">
+			<img src="imagess/10.png"/>
+		</div>
+		<div id="main">
+			<div id="top">
+				<a href="#pic_36"><img src="imagess/8.jpg"/></a>
+				<a href="http://huodong.weibo.com/qiche/?adkey=weibo&advalue=3001" target="_blank"><img id="pic_36" src="imagess/36.png"/></a>
+			</div>
+			<div class="bottom clear">
+				<div id="left">
+					<div id="ltop">
+						还没有微博账号？现在加入<a class="link1" target="_blank" href="http://weibo.com/signup/signup.php">立即注册</a>
+					</div>
+					<!--图片轮播-->
+						<div id="lbottom">
+							<div id="pic_cha_cont ">
+								<img style="display:" src="imagess/4.jpg"/>
+								<img style="display:none" src="imagess/9.jpg"/>
+								<img style="display:none" src="imagess/38.jpg"/>
+							</div>
+							<div id="pic_cha_nav">
+								<span index="1" class="active">●</span>
+								<span index="2" >●</span>
+								<span index="3">●</span>
+							</div>
+							<a  id="arrleft" href="javascript:;">&lt</a>
+							<a id="arrright"href="javascript:;">&gt</a>
+						</div>
+						<!--图片轮播-->
+				</div>
+				<div id="right">
+					<div class="rmain">
+						<div id="rmtop">
+							<span ><a nub="1"id="normal_log" style="color:black;"href="javascript:;">普通登录</a></span><span style="color:#808080;margin-left:6px;">|</span>
+							<span ><a nub="2"id="qrcode_log" href="javascript:;">二维码登录</a></span><span style="color:#808080;margin-left:6px;">|</span>
+							<span ><a nub="3"id="message_log" href="javascript:;">短信登录</a></span>
+						</div>
+						<div class="main_log ">
+							<!--普通登录-->
+							<div id="ul1" style="display:">
+								<div class="username">
+									<input type="text" name="username" placeholder="邮箱/会员账号/手机号">
+								</div>
+								<div class="password">
+									<input type="password" name="password" placeholder="请输入密码" >
+								</div>
+								<div class="else">
+									<lable title="建议在网吧或公共电脑上取消该项。">
+										<input type="checkbox" checked="checked">下次自动登录
+									</lable>
+									<a href="http://help.weibo.com/faq/q/85/12524#12524" target="_blank" title="记不住登录状态，怎么办？"><img src="imagess/22.png"/></a>
+									<a class="h1" href="https://login.sina.com.cn/getpass.html?entry=weibo" target="_blank">忘记密码</a>
+								</div>
+								<div class="log">
+									<div class="log_in"><a class="log_a"href="javascript:;">登录</a></div>
+									<div class="else2">
+										<span>还没有微博？<a href="http://weibo.com/signup/signup.php" target="_blank">立即注册！</a></span>
+									</div>
+								</div>
+							</div>
+							<!--/普通登录-->
+							<!--二维码登录-->
+							<div id="ul2" style="display:none">
+								<span style="font-size:12px">用微博客户端扫描安全登录</span>
+								<a class="hhid"href="javascript:;"><img class="img22"src="imagess/22.png"/><img class="hidden"src="imagess/37.png"/></a>
+								<div class="pic">
+									<img src="imagess/35.png"/>
+								</div>
+								<div class="else2"style="margin-top:-5px;" >
+									<span>还没有微博？<a href="http://weibo.com/signup/signup.php" target="_blank">立即注册！</a></span>
+								</div>
+							</div>
+							<!--/二维码登录-->
+							<!--短信登录-->
+							<div id="ul3" style="display:none">
+								<div class="ul3_1"><img src="imagess/27.png"/><span>仅支持大陆手机地区号码</span></div>
+								<div class="ul3_2"><input type="text" placeholder="请输入您的手机号码"></div>
+								<div class="ul3_3">
+									<a href="javascript:;">免费获取短信验证码</a>
+									<input type="text" placeholder="短信验证码">
+								</div>
+								<div class="else">
+									<lable title="建议在网吧或公共电脑上取消该项。">
+										<input type="checkbox" checked="checked">下次自动登录
+									</lable>
+									<a href="http://help.weibo.com/faq/q/85/12524#12524" target="_blank" title="记不住登录状态，怎么办？"><img src="imagess/22.png"/></a>
+									<a class="h1" href="https://login.sina.com.cn/getpass.html?entry=weibo" target="_blank">忘记密码</a>
+								</div>
+								<div class="log">
+									<div class="log_in"><a class="log_a"href="javascript:;">登录</a></div>
+									<div class="else2">
+										<span>还没有微博？<a href="http://weibo.com/signup/signup.php" target="_blank">立即注册！</a></span>
+									</div>
+								</div>
+							</div>
+							<!--/短信登录-->
+						</div>
+						<div class="other">
+							<div class="tao">
+								<a href="https://login.taobao.com/member/login.jhtml?spm=0.0.0.0.wyhDDO&from=wblogin&style=wblogin&wbp=&redirect_url=http%3A%2F%2Fweibo.com%2Fa%2Fbind%2Flogin%3Fentry%3Dtaobao%26sid%3D5c509b05a8e74af895d0fd463753ff31"><img src="imagess/12.png"/>使用淘宝账户登录微博</a>
+							</div>
+							<!--其他登录方式-->
+							<div class="otherlog">
+								<a href="https://passport.weibo.com/othersitebind/authorize?entry=miniblog&site=qq"><img class="img17"src="imagess/17.png"/>QQ登录微博<img class="img28"src="imagess/28.png" title="用QQ号可以登录微博啦"/></a>
+
+								<span>
+									<a id="other_log"href="javascript:;"style="color:#0a8cd2;"title="展开">其他方式登录
+										<div id="tTriangle" style="display:"></div>
+										<div id="dTriangle" style="display:none"></div>
+									</a>
+								</span>
+
+								<ul id="li" style="display:none">
+									<li><a target="_blank" href="http://sersh.passport.189.cn/OAuth/authorize.aspx?client_id=3535450001600701&response_type=code&redirect_uri=http%3A%2F%2Faccount.weibo.com%2Fset%2Fbindsns%2Fcallback&state=telecom"><img src="imagess/18.png"/>天翼</a>
+									</li>
+
+									<li><a target="_blank" href="http://account.weibo.com/set/bindsns/unicomoauth"><img src="imagess/19.png"/>联通</a></li>
+
+									<li><a target="_blank" href="https://openapi.360.cn/oauth2/authorize?client_id=8819d1babbbc50a42021ee957c4b6e63&response_type=code&redirect_uri=http://account.weibo.com/set/bindsns/callback&scope=basic&display=default&state=360&relogin=sina"><img src="imagess/20.png"/>360</a></li>
+
+									<li><a target="_blank" href="https://passport.weibo.com/othersitebind/authorize?entry=miniblog&site=baidu"><img src="imagess/21.png"/>百度</a></li>
+
+								</ul>
+
+							</div>
+							<!--/其他登录方式-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="foot">
+				<ul class="f1">
+					<li><a target="_blank"href="http://m.weibo.com/web/cellphone.php?topnav=1&wvr=4#iphone"><img src="imagess/25.png"/>iPone/iPad</a></li>
+					<li><a target="_blank" href="http://m.weibo.com/web/cellphone.php?topnav=1&wvr=4#android"><img src="imagess/26.png"/>Android</a></li>
+					<li><a target="_blank" href="http://m.weibo.com/web/cellphone.php?topnav=1&wvr=4#windowsphone"><img src="imagess/13.png"/>Windows Phone</a></li>
+					<li><a target="_blank" href="http://m.weibo.com/web/cellphone.php?topnav=1&wvr=4#msg"><img src="imagess/14.png"/>其他手机端</a></li>
+					<li><a target="_blank" href="http://desktop.weibo.com/?source=textlink_landingpage"><img src="imagess/15.png"/>微博桌面</a></li>
+				</ul>
+				<div class="f2">
+					<a href="http://ir.weibo.com/?bottomnav=1&wvr=5" target="_balnk">关于微博</a><span>|</span>
+					<a href="http://help.weibo.com/?refer=didao&bottomnav=1&wvr=5" target="_balnk">微博帮助</a><span>|</span>
+					<a href="http://weibo.com/k/weijianyi" target="_balnk">意见反馈</a><span>|</span>                		<a href="http://verified.weibo.com/verify" target="_balnk">微博认证及合作</a><span>|</span>
+					<a href="http://open.weibo.com/" target="_balnk">开放平台</a><span>|</span>
+					<a href="http://hr.weibo.com/" target="_balnk">微博招聘</a><span>|</span>
+					<a href="http://news.sina.com.cn/guide/" target="_balnk">新浪网导航</a><span>|</span>
+					<select id="select">
+						<option value="简体" selected="selected">中文(简体)</option>
+						<option value="台湾">中文(台湾)</option>
+						<option value="香港">中文(香港)</option>
+						<option value="English">English</option>
+					</select>
+				</div>
+				<div class="f3">
+					Copyright &copy 2009-2014 WEIBO 北京微梦创科网络技术有限公司<span>京网文[2011]0398-130号京ICP备12002058号</span>
+					<a href="http://news.sina.com.cn/c/2012-12-29/051425921660.shtml"target="_blank"> 全国人大常委会关于加强网络信息保护的决定</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="picchange.js"></script><!--图片轮播-->
+	<script src="tabchange.js"></script><!--登录方式切换-->
+	<script src="hidORshow.js"></script><!--其他登录方式的显示与隐藏-->
+ </body>
+</html>
