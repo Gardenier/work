@@ -1,0 +1,566 @@
+/* line 5, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/style.scss */
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+/* line 6, ../sass/style.scss */
+h2 {
+  font-weight: bold;
+  font-family: tahoma,arial,\5b8b\4f53,sans-serif;
+  line-height: 3;
+}
+
+/* line 11, ../sass/style.scss */
+section {
+  height: 100px;
+  background-color: #20bbaa;
+}
+/* line 14, ../sass/style.scss */
+section div {
+  text-align: center;
+  padding-top: 40px;
+}
+/* line 17, ../sass/style.scss */
+section div a {
+  position: relative;
+  text-decoration: none;
+  margin-right: 100px;
+  color: #fff;
+  text-shadow: 0px 1px 1px #ccc;
+  display: inline-block;
+  /* !!!!!! */
+}
+/* line 26, ../sass/style.scss */
+section .effect-bracket a:before {
+  content: '[';
+  font-weight: bold;
+  opacity: 0;
+  -moz-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+}
+/* line 32, ../sass/style.scss */
+section .effect-bracket a:hover:before, section .effect-bracket a:hover:after {
+  opacity: 1;
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  -o-transition: -o-transform 0.3s, opacity 0.3s;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+/* line 37, ../sass/style.scss */
+section .effect-bracket a:after {
+  content: ']';
+  font-weight: bold;
+  opacity: 0;
+  -moz-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+/* line 43, ../sass/style.scss */
+section .effect-bottom-line {
+  position: relative;
+}
+/* line 45, ../sass/style.scss */
+section .effect-bottom-line a:after {
+  width: 100%;
+  height: 2px;
+  content: '';
+  background-color: #ff6600;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  opacity: 0;
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+}
+/* line 56, ../sass/style.scss */
+section .effect-bottom-line a:hover:after {
+  opacity: 1;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  -o-transition: -o-transform 0.3s, opacity 0.3s;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+/* line 63, ../sass/style.scss */
+section .effect-double-line {
+  position: relative;
+}
+/* line 65, ../sass/style.scss */
+section .effect-double-line a:after {
+  width: 100%;
+  height: 2px;
+  content: '';
+  background-color: #ff6600;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+}
+/* line 75, ../sass/style.scss */
+section .effect-double-line a:before {
+  width: 100%;
+  height: 2px;
+  content: '';
+  background-color: #ff6600;
+  position: absolute;
+  left: 0px;
+  opacity: 0;
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+}
+/* line 85, ../sass/style.scss */
+section .effect-double-line a:hover:before {
+  opacity: 1;
+  -moz-transition: -moz-transform 0.5s, opacity 0.5s;
+  -o-transition: -o-transform 0.5s, opacity 0.5s;
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+/* line 92, ../sass/style.scss */
+section .effect-double-line-slight {
+  position: relative;
+}
+/* line 94, ../sass/style.scss */
+section .effect-double-line-slight a:before {
+  width: 100%;
+  height: 2px;
+  content: '';
+  background-color: #ff6600;
+  position: absolute;
+  left: 0px;
+  opacity: 0;
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+/* line 104, ../sass/style.scss */
+section .effect-double-line-slight a:after {
+  width: 100%;
+  height: 2px;
+  content: '';
+  background-color: #ff6600;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0;
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+}
+/* line 115, ../sass/style.scss */
+section .effect-double-line-slight a:hover {
+  color: #ff6600;
+}
+/* line 117, ../sass/style.scss */
+section .effect-double-line-slight a:hover:before {
+  opacity: 1;
+  -moz-transition: -moz-transform 0.5s, opacity 0.5s;
+  -o-transition: -o-transform 0.5s, opacity 0.5s;
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+/* line 122, ../sass/style.scss */
+section .effect-double-line-slight a:hover:after {
+  opacity: 1;
+  -moz-transition: -moz-transform 0.5s, opacity 0.5s;
+  -o-transition: -o-transform 0.5s, opacity 0.5s;
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+}
+/* line 131, ../sass/style.scss */
+section .effect-scale-down {
+  position: relative;
+}
+/* line 133, ../sass/style.scss */
+section .effect-scale-down a:before {
+  content: attr(data-hover);
+  color: #fff;
+  position: absolute;
+  left: 0px;
+}
+/* line 139, ../sass/style.scss */
+section .effect-scale-down a:hover, section .effect-scale-down a:focus {
+  color: #333;
+}
+/* line 141, ../sass/style.scss */
+section .effect-scale-down a:hover:before, section .effect-scale-down a:focus:before {
+  opacity: 0;
+  -moz-transform: scale(0.8, 0.8);
+  -ms-transform: scale(0.8, 0.8);
+  -webkit-transform: scale(0.8, 0.8);
+  transform: scale(0.8, 0.8);
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  -o-transition: -o-transform 0.3s, opacity 0.3s;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+/* line 148, ../sass/style.scss */
+section .effect-fall-down {
+  position: relative;
+}
+/* line 150, ../sass/style.scss */
+section .effect-fall-down a:before {
+  content: attr(data-hover);
+  color: #fff;
+  position: absolute;
+  left: 0px;
+  opacity: 0;
+  -moz-transform: translateX(20px) translateY(-10px) rotate(20deg);
+  -ms-transform: translateX(20px) translateY(-10px) rotate(20deg);
+  -webkit-transform: translateX(20px) translateY(-10px) rotate(20deg);
+  transform: translateX(20px) translateY(-10px) rotate(20deg);
+}
+/* line 159, ../sass/style.scss */
+section .effect-fall-down a {
+  color: #333;
+}
+/* line 162, ../sass/style.scss */
+section .effect-fall-down a:hover:before {
+  opacity: 1;
+  -moz-transform: translateX(0px) translateY(0px) rotate(0deg);
+  -ms-transform: translateX(0px) translateY(0px) rotate(0deg);
+  -webkit-transform: translateX(0px) translateY(0px) rotate(0deg);
+  transform: translateX(0px) translateY(0px) rotate(0deg);
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  -o-transition: -o-transform 0.3s, opacity 0.3s;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+/* line 171, ../sass/style.scss */
+section .effect-border-fall {
+  position: relative;
+}
+/* line 173, ../sass/style.scss */
+section .effect-border-fall a {
+  border: 3px solid #339966;
+  padding: 10px 20px;
+}
+/* line 176, ../sass/style.scss */
+section .effect-border-fall a:before {
+  content: '';
+  border: 3px solid #fff;
+  width: 107%;
+  height: 117%;
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  opacity: 0;
+  -moz-transform: translateX(10px) translateY(-15px) rotate(5deg);
+  -ms-transform: translateX(10px) translateY(-15px) rotate(5deg);
+  -webkit-transform: translateX(10px) translateY(-15px) rotate(5deg);
+  transform: translateX(10px) translateY(-15px) rotate(5deg);
+}
+/* line 188, ../sass/style.scss */
+section .effect-border-fall a:hover:before {
+  opacity: 1;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  -o-transition: -o-transform 0.3s, opacity 0.3s;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -moz-transform: translateX(0px) translateY(0px) rotate(0deg);
+  -ms-transform: translateX(0px) translateY(0px) rotate(0deg);
+  -webkit-transform: translateX(0px) translateY(0px) rotate(0deg);
+  transform: translateX(0px) translateY(0px) rotate(0deg);
+}
+/* line 196, ../sass/style.scss */
+section .effect-text-fill {
+  position: relative;
+}
+/* line 198, ../sass/style.scss */
+section .effect-text-fill a {
+  color: #333;
+}
+/* line 200, ../sass/style.scss */
+section .effect-text-fill a:before {
+  content: attr(data-hover);
+  max-width: 0;
+  overflow: hidden;
+  color: #fff;
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 211, ../sass/style.scss */
+section .effect-text-fill a:hover:before {
+  max-width: 100%;
+  -moz-transition: max-width 0.3s;
+  -o-transition: max-width 0.3s;
+  -webkit-transition: max-width 0.3s;
+  transition: max-width 0.3s;
+}
+/* line 220, ../sass/style.scss */
+section .effect-push a {
+  overflow: hidden;
+  line-height: 44px;
+}
+/* line 223, ../sass/style.scss */
+section .effect-push a span {
+  dispaly: block;
+  padding: 10px 20px;
+  background-color: #66cccc;
+}
+/* line 229, ../sass/style.scss */
+section .effect-push a:before {
+  color: #66cccc;
+  background-color: #fff;
+  content: attr(data-hover);
+  padding: 10px 20px;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+/* line 240, ../sass/style.scss */
+section .effect-push a:hover span {
+  -moz-transform: translateX(90px);
+  -ms-transform: translateX(90px);
+  -webkit-transform: translateX(90px);
+  transform: translateX(90px);
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+/* line 246, ../sass/style.scss */
+section .effect-push a:hover:before {
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+/* line 254, ../sass/style.scss */
+section .effect-slide a {
+  overflow: hidden;
+  line-height: 24px;
+}
+/* line 257, ../sass/style.scss */
+section .effect-slide a span {
+  display: inline-block;
+  position: relative;
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+/* line 261, ../sass/style.scss */
+section .effect-slide a span:before {
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
+}
+/* line 270, ../sass/style.scss */
+section .effect-slide a:hover span {
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+/* line 277, ../sass/style.scss */
+section .effect-slide-3D a {
+  perspective: 1000px;
+  line-height: 44px;
+}
+/* line 280, ../sass/style.scss */
+section .effect-slide-3D a span {
+  display: inline-block;
+  position: relative;
+  background-color: #2195de;
+  padding: 0 10px;
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+/* line 293, ../sass/style.scss */
+section .effect-slide-3D a span:before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #2195de;
+  content: attr(data-hover);
+  -moz-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+/* line 309, ../sass/style.scss */
+section .effect-slide-3D a:hover {
+ /* &:before{
+	background-color:#28a2ee;
+}  */
+}
+/* line 310, ../sass/style.scss */
+section .effect-slide-3D a:hover span {
+  -moz-transform: rotateX(90deg) translateY(-22px);
+  -ms-transform: rotateX(90deg) translateY(-22px);
+  -webkit-transform: rotateX(90deg) translateY(-22px);
+  transform: rotateX(90deg) translateY(-22px);
+}
+/* line 320, ../sass/style.scss */
+section .effect-turn a {
+  line-height: 24px;
+  perspective: 800px;
+}
+/* line 323, ../sass/style.scss */
+section .effect-turn a span {
+  display: inline-block;
+  position: relative;
+  padding: 3px 15px 0;
+  background-color: #587285;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  -moz-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+/* line 335, ../sass/style.scss */
+section .effect-turn a span:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  color: #2f4351;
+  content: attr(data-hover);
+  -moz-transform: rotateX(270deg);
+  -ms-transform: rotateX(270deg);
+  -webkit-transform: rotateX(270deg);
+  transform: rotateX(270deg);
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+/* line 353, ../sass/style.scss */
+section .effect-turn a:hover span:before {
+  -moz-transform: rotateX(10deg);
+  -ms-transform: rotateX(10deg);
+  -webkit-transform: rotateX(10deg);
+  transform: rotateX(10deg);
+}
