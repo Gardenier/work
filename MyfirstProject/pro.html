@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>爱健康</title>
+	<script src="../jquery/2.1.3/jquery-2.1.3.min.js"></script>
+	<link rel="stylesheet" href="stylesheets/head.css">
+	<link rel="shortcut icon" href="favicon.ico"/>
+	<!-- <link rel="bookmark" href="images/logo.ico"/> -->
+</head>
+<body>
+	<div class="header">
+		<div class="Main_header">
+			<img class="logo" src="images/logo-home.png" alt="爱健康">
+			<ul class="Tab_head">
+				<li class="h_active"><a href="javascript:;">首页</a></li>
+				<li><a href="javascript:;">健康计划</a></li>
+				<li><a href="javascript:;">健康管理</a></li>
+				<li><a href="javascript:;">家人关怀</a></li>
+				<li><a href="javascript:;">健康档案</a></li>
+			</ul>
+			<img class="user_msg"src="images/message.png" alt="消息">
+			<span class="user_msg_d"></span>
+			<div class="user">
+				<div class="user_main ">
+					<img class="user_pic"src="images/pic1.jpg">
+					<p class="user_name">weijianxing</p>
+					<span class="user_more"></span>
+					<input class="hidden" type="hidden" val="0"/>
+				</div>
+				<div class="user_hide">
+					<ul>
+						<li><a href="http://www.jk189.net/userCenter/setup.do">账号设置</a>
+						<li><a href="http://www.jk189.net/userCenter/personInfo.do">个人信息</a></li>
+						<li><a href="http://www.jk189.net/userCenter/device.do">我的设备</a></li>
+						<li><a href="http://www.jk189.net/index.do">退出</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="con clearfix">
+		<div class="con_lft">
+			<h3>我加入爱健康以来</h3>
+			<div class="con_lft_ani">
+				<div class="con_ani_one">
+					<div class="con_ani_one_in">
+						<p>共燃烧</p>
+						<p><span>1215</span>卡</p>
+					</div>
+				</div>
+				<div class="con_ani_mini_one"></div>
+				<div class="con_ani_two">
+					<div class="con_ani_one_in">
+						<p style="padding-left:15px;">已运动</p>
+						<p><span>12</span>天</p>
+					</div>
+				</div>
+				<div class="con_ani_mini_two"></div>
+				<div class="con_ani_three">
+					<div class="con_ani_one_in">
+						<p>积累路程</p>
+						<p><span style="margin-left:-7px;">15</span>km</p>
+					</div>
+				</div>
+			</div>
+			<div class="con_lft_tab">
+				<div class="con_tab_select clearfix">
+					<div class="tab_one tab_active">智能配件</div>
+					<div class="tab_two ">手机</div>
+				</div>
+				<div class="tab_one_show clearfix">
+					<div class="svg_pic1">
+						<svg width="309" height="240"version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<path d="M189.5,115  Q229.5,115,249.49473669630333,116" style="stroke:#7dbe0f;fill:none;"/>
+							<path  d="M182.70604139901076,62.41389536562841Q194.4617464448602,46.23355547812946,217.618935352238,44" style="fill:none;stroke:#2ba8d7"/>
+							<path  d="M91.9138953656284,153.20604139901076Q75.73355547812946,164.96174644486024,61.67143417586749,176" style="fill:none;stroke:#f09f11"/>
+							<path  d="M206.318673559185,135.08610463437157L185.3954302006916,128.28773075812273A43,43,0,1,1,144.5,72L144.5,50A65,65,0,1,0,206.318673559185,135.08610463437157"  style="fill:#f09f11;stroke:#ffffff"/>
+							<path  d="M144.5,50L144.5,72A43,43,0,0,1,185.3954302006916,101.71226924187727L206.318673559185,94.91389536562842A65,65,0,0,0,144.5,50" style="fill:#2ba8d7;stroke:#ffffff"/>
+							<path  d="M206.318673559185,94.91389536562842L185.3954302006916,101.71226924187727A43,43,0,0,1,185.3954302006916,128.28773075812273L206.318673559185,135.08610463437157A65,65,0,0,0,206.318673559185,94.91389536562842"  style="fill:#7dbe0f;stroke:#ffffff" />
+						</svg>
+						<div class="pic1_title">
+							<h4>运动时长</h4>
+							<p ><span>0</span>分钟</p>
+						</div>
+						<span style="position: absolute; top: 187px;">轻度/静止</span>
+						<span style="position: absolute;top: 54px;left: 222px;">适度运动</span>
+						<span style="position: absolute;left: 254px;top: 127px;">强度运动</span>
+					</div>
+					<div class="svg_pic2">
+						<div class="fire">最近五次燃烧的卡路里</div>
+						<div class="fire_svg_pic_one" style="display:none;">
+							<div class="fire_data">
+								<span class="data1">23</span>
+								<span class="data2">5</span>
+								<span class="data3">1</span>
+								<span class="data4">170</span>
+								<span class="data5">1</span>
+							</div>
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="180"width="240">
+								<rect x="70" y="131" width="19" height="10" r="0" rx="0" ry="0"  stroke-width="0" style="fill:#1f77b4;stroke:#000"/>
+								<rect x="108" y="138" width="19" height="2" r="0" rx="0" ry="0" stroke-width="0" style="fill:#1f77b4;stroke:#000 "/>
+								<rect x="146" y="140" width="19" height="1" r="0" rx="0" ry="0" stroke-width="0" style="fill:#1f77b4;stroke:#000 "/>
+								<rect x="183" y="72" width="19" height="68" r="0" rx="0" ry="0" stroke-width="0" style="fill:#1f77b4;stroke:#000 "/>
+								<rect x="221" y="140" width="19" height="1" r="0" rx="0" ry="0" stroke-width="0" style="fill:#1f77b4;stroke:#000 "/>
+							</svg>
+							<div style="width:200px;border-bottom:1px solid #ccc;position:relative;top:-44px;left:53px;"></div>
+							<div class="fire_day">
+								<span class="day1">01.22</span>
+								<span class="day2">01.23</span>
+								<span class="day3">01.26</span>
+								<span class="day4">03.03</span>
+								<span class="day5">03.04</span>
+							</div>
+						</div>
+						<div class="fire_svg_pic_two">
+							<div class="fire_data">
+								<span class="data1">66</span>
+								<span class="data2">101</span>
+								<span class="data3">350</span>
+								<span class="data4">19</span>
+							</div>
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="180"width="240">
+								<rect x="72" y="127" width="24" height="14" r="0" rx="0" ry="0"  stroke-width="0" style="fill:#1f77b4;stroke:#000"/>
+								<rect x="120" y="120" width="24" height="21" r="0" rx="0" ry="0" stroke-width="0" style="fill:#1f77b4;stroke:#000 "/>
+								<rect x="167" y="70" width="24" height="70" r="0" rx="0" ry="0" stroke-width="0" style="fill:#1f77b4;stroke:#000 "/>
+								<rect x="214" y="137" width="24" height="4" r="0" rx="0" ry="0" stroke-width="0" style="fill:#1f77b4;stroke:#000 "/>
+							</svg>
+							<div style="width:200px;border-bottom:1px solid #ccc;position:relative;top:-44px;left:53px;"></div>
+							<div class="fire_day">
+								<span class="day1">08.05</span>
+								<span class="day2">08.05</span>
+								<span class="day3">08.10</span>
+								<span class="day4">08.11</span>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="con_icon clearfix">
+					<div class="con_icon_one">
+						<img src="images/foot-icon.png">
+						<p>步数<br/><span>0</span>步</p>
+					</div>
+					<div class="con_icon_two">
+						<img src="images/hint-icon.png">
+						<p>距离<br/><span>0</span>公里</p>
+					</div>
+					<div class="con_icon_three">
+						<img src="images/fire-icon.png">
+						<p>燃烧<br/><span>0</span>卡</p>
+					</div>
+				</div>
+			</div>
+			<div class="con_left_sport">
+				<div class="sport_tab">
+					<ul>
+						<li class="active"><a  href="javascript:;">运动量</a></li>
+						<li><a href="javascript:;">体重</a></li>
+						<li><a href="javascript:;">血压</a></li>
+						<li><a href="javascript:;">血糖</a></li>
+					</ul>
+				</div>
+				<div class="sport_pic">
+					<div class="day clearfix">
+						<div class="d_active"><p>当天<span></span></p></div>
+						<div><p>7天<span></span></p></div>
+						<div><p class="oneMon">30天<span></span></p></div>
+					</div>
+					<div class="pic">
+						<div class="pic_no_sport" >亲，您还没有运动曲线哦!</div>
+						<div class="pic_no_weight" style="display:none;">亲，您还没有体重曲线哦!</div>
+						<div class="pic_no_bldPre" style="display:none;">亲，您还没有血压曲线哦!</div>
+						<div class="pic_no_bldSug" style="display:none;">亲，您还没有血糖曲线哦!</div>
+						<div class="svg_bldPre"style="display:none;">
+							<div class="svg_bldPre_title">
+								血压走势图
+							</div>
+							<div class="svg_bldPre_main">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="500" height="300" style="position:relative;z-index:10;">
+									<path  d="M113.00647130598918,85.71428571428571C130.67960585653782,85.71428571428572,183.67097981770831,85.71428571428571,219,85.71428571428572C254.33333333333334,85.71428571428572,289.6666666666667,70.07142857142857,325,85.71428571428572C360.3333333333333,101.35714285714288,413.3333333333333,163.92857142857147,431,179.57142857142858" stroke-width="3px" style="fill:none;stroke:#98df8a;z-index:1;"/><!-- 绿线 -->
+
+									<path style="fill:none; stroke:#98df8a"  d="M113,85.71428571428572C130.66666666666666,85.71428571428572,183.66666666666666,85.71428571428571,219,85.71428571428572C254.33333333333334,85.71428571428572,289.6666666666667,70.07142857142857,325,85.71428571428572C360.3333333333333,101.35714285714288,413.3333333333333,163.92857142857147,431,179.57142857142858" stroke-width="3px"/>
+									<path style="fill:#98df8a; stroke:#ffffff " d="M113,80.91428571428573L117.8,85.71428571428572L113,90.51428571428572L108.2,85.71428571428572Z"  r="4" stroke-width="1.5" cx="113" cy="85.71428571428572"/>
+									<path style="fill:#98df8a;stroke:#ffffff " d="M219,80.91428571428573L223.8,85.71428571428572L219,90.51428571428572L214.2,85.71428571428572Z"  r="4" stroke-width="1.5" cx="219" cy="85.71428571428572"/>
+									<path style="fill:#98df8a;stroke:#ffffff"  d="M325,80.91428571428573L329.8,85.71428571428572L325,90.51428571428572L320.2,85.71428571428572Z"  r="4" stroke-width="1.5" cx="325" cy="85.71428571428572"/>
+									<path style="fill:#98df8a;stroke:#ffffff"  d="M431,174.77142857142857L435.8,179.57142857142858L431,184.3714285714286L426.2,179.57142857142858Z" r="4" stroke-width="1.5" cx="431" cy="179.57142857142858"/><!-- 绿点 -->
+
+									<path  d="M113.00647130598918,162.85714343183176C130.67960585653782,162.86028142486302,183.67097981770831,175.71271623883922,219,162.85714285714283C254.33333333333334,150,289.6666666666667,75.85714285714285,325,85.71428571428572C360.3333333333333,95.5714285714286,413.3333333333333,199.2857142857143,431,222" stroke-width="3px" style="fill:none ;stroke:#ff7f0e"/><!-- 黄线 -->
+									
+									<path  d="M325,80.91428571428573L329.8,85.71428571428572L325,90.51428571428572L320.2,85.71428571428572Z"  r="4" stroke-width="1.5" cx="325" cy="85.71428571428572" style="fill:#98df8a; stroke:#ffffff"/> <!-- 黄绿交叉点 -->
+									 <path  d="M431,217.2L435.8,222L431,226.8L426.2,222Z"  r="4" stroke-width="1.5" cx="431" cy="222" style="fill:#ff7f0e; stroke:#ffffff"/> <!-- 黄点 -->
+									 
+									<path d="M113.00647130598918,162.85714285714286C130.67960585653782,162.85714285714286,183.67097981770831,162.8571428571428,219,162.85714285714283C254.33333333333334,162.85714285714286,289.6666666666667,162.8571428571428,325,162.85714285714283C360.3333333333333,162.85714285714286,413.3333333333333,162.8571428571428,431,162.85714285714283" stroke-width="3px" style="fill:none;stroke:#1f77b4 "/> <!-- 深蓝线 -->
+
+									 <circle cx="113" cy="162.85714285714283" r="4"  stroke-width="1.5" style="fill:#1f77b4; stroke:#ffffff"/>
+									<circle cx="219" cy="162.85714285714283" r="4"  stroke-width="1.5" style="fill:#1f77b4; stroke:#ffffff"/>
+									<circle cx="325" cy="162.85714285714283" r="4"  stroke-width="1.5" style="fill:#1f77b4; stroke:#ffffff"/>
+									<circle cx="431" cy="162.85714285714283" r="4" stroke-width="1.5" style="fill:#1f77b4; stroke:#ffffff"/> <!-- 深蓝点 -->
+
+									 <path d="M113,214.2857142857143C130.66666666666666,214.2857142857143,183.66666666666666,214.2857142857143,219,214.2857142857143C254.33333333333334,214.2857142857143,289.6666666666667,214.2857142857143,325,214.2857142857143C360.3333333333333,214.2857142857143,413.3333333333333,214.2857142857143,431,214.2857142857143" stroke-width="3px" style="fill:none; stroke:#aec7e8 "/><!--  浅蓝线 -->
+
+									 <path d="M113,208.6857142857143L108.15025773880714,217.08571428571432L117.84974226119286,217.08571428571432Z"  r="4" stroke-width="1.5" cx="113" cy="214.2857142857143" style="fill:#aec7e8; stroke:#ffffff "/>
+									<path style="fill:#aec7e8; stroke:#ffffff"  d="M219,208.6857142857143L214.15025773880714,217.08571428571432L223.84974226119286,217.08571428571432Z"  r="4" stroke-width="1.5" cx="219" cy="214.2857142857143"/>
+									<path style="fill:#aec7e8; stroke:#ffffff"  d="M325,208.6857142857143L320.15025773880717,217.08571428571432L329.84974226119283,217.08571428571432Z"  r="4" stroke-width="1.5" cx="325" cy="214.2857142857143"/>
+									<path style="fill:#aec7e8 ;stroke:#ffffff"  d="M431,208.6857142857143L426.15025773880717,217.08571428571432L435.84974226119283,217.08571428571432Z" r="4" stroke-width="1.5" cx="431" cy="214.2857142857143"/> <!-- 浅蓝三角 -->
+
+									<circle cx="105.98209729235896" cy="282" r="3" stroke-width="0" style=" fill:#1f77b4; stroke:#1f77b4 "/> 
+									<path d="M99.38209729235896,282L112.58209729235895,282" stroke-width="2" style=" fill:#1f77b4; stroke:#1f77b4"/> 
+									<path  d="M202.98209729235896,279L199.5179956772212,285L206.44619890749672,285Z"  stroke-width="0" style="fill:#aec7e8; stroke:#aec7e8"/> 
+									<path  d="M196.38209729235896,282L209.58209729235895,282"  stroke-width="2" style="fill:#aec7e8;stroke:#aec7e8"/> 
+									<rect x="296.98209729235896" y="279" width="6" height="6" r="0" rx="0" ry="0" stroke-width="0" style="fill:#98df8a ;stroke:#98df8a"/> 
+									<path  d="M293.38209729235894,282L306.582097292359,282"  stroke-width="2" style="fill:#98df8a; stroke:#98df8a"/>
+									<rect x="393.98209729235896" y="279" width="6" height="6" r="0" rx="0" ry="0"  stroke-width="0" style=" fill:#ff7f0e; stroke:#ff7f0e"/> 
+									<path  d="M390.38209729235894,282L403.582097292359,282" stroke-width="2" style="fill:#ff7f0e; stroke:#ff7f0e"/><!--  注释 --> 
+								</svg>
+								<span class="svg_comment" style="color:#1f77b4;bottom: 14px;left: 118px;">标准收缩压</span>
+								<span class="svg_comment" style="color:#aec7e8;bottom: 13px;left: 216px;">标准舒张压</span>
+								<span class="svg_comment" style="color:#98df8a;bottom: 13px;left: 312px;">你的收缩压</span>
+								<span class="svg_comment" style="color:#ff7f0e;bottom: 14px;left: 407px;">你的舒张压</span>
+								<div class="svg_table">
+									<div style="border:1px solid #eee;width:100%;height:25px;border-left-color:#fff;border-right-color:#fff;margin-top:25px;"></div>
+									<div style="border:1px solid #eee;width:100%;height:25px;border-left-color:#fff;border-right-color:#fff;margin-top:25px;"></div>
+									<div style="border:1px solid #eee;width:100%;height:25px;border-left-color:#fff;border-right-color:#fff;margin-top:25px;"></div>
+
+
+									<div class="hover1"style="border:1px solid #fff;height:100%;width:107px;margin-top:-182px;"></div>
+
+									<div class="hover2"style="border:1px solid #eee;border-bottom-color:#fff;border-top-color:#fff;height:100%;width:107px;margin-left:107px;margin-top:-158px;"></div>
+									
+									<div class="hover3"style="border:1px solid #fff;height:100%;width:101px;margin-top:-182px;margin-left:216px"></div>
+
+									<div class="hover4"style="border:1px solid #eee;border-bottom-color:#fff;border-top-color:#fff;border-right-color:#fff;height:100%;width:107px;margin-left:317px;margin-top:-180px;"></div>
+
+
+									<div class="data_one hide " ></div>
+									<div class="data_show_one hide"style="top:20px;left:61px;">
+										<span style="color:#98df8a;">你的收缩压 180 mmHg</span>
+										<span style="color:#1f77b4;">标准收缩压 120 mmHg</span>
+										<span style="color:#ff7f0e;">你的舒张压 120 mmHg</span>
+										<span style="color:#aec7e8;">标准舒张压 80 mmHg</span>
+									</div>
+									<div class="data_two hide" ></div>
+									<div class="data_show_two hide" style="top:66px;left:164px;">
+										<span style="color:#98df8a;">你的收缩压 180 mmHg</span>
+										<span style="color:#1f77b4;">标准收缩压 120 mmHg</span>
+										<span style="color:#ff7f0e;">你的舒张压 120 mmHg</span>
+										<span style="color:#aec7e8;">标准舒张压 80 mmHg</span>
+									</div>
+									<div class="data_three hide" ></div>
+									<div class="data_show_three hide" style="top:20px;left:270px;">
+										<span style="color:#98df8a;">你的收缩压 180 mmHg</span>
+										<span style="color:#1f77b4;">标准收缩压 180 mmHg</span>
+										<span style="color:#ff7f0e;">你的舒张压 120mmHg</span>
+										<span style="color:#aec7e8;">标准舒张压 80 mmHg</span>
+									</div>
+									<div class="data_four hide" ></div>
+									<div class="data_show_four hide"style="top:59px;left:227px;">
+										<span style="color:#98df8a;">你的收缩压 120 mmHg</span>
+										<span style="color:#1f77b4;">标准收缩压 107 mmHg</span>
+										<span style="color:#ff7f0e;">你的舒张压 80 mmHg</span>
+										<span style="color:#aec7e8;">标准舒张压 74 mmHg</span>
+									</div>
+								</div>
+								<div class="svg_table_data">
+									<span style="top:51px;left:30px; ">200</span>
+									<span style="top:76px;left:30px; ">180</span>
+									<span style="top:102px;left:30px; ">160</span>
+									<span style="top:127px;left:30px; ">140</span>
+									<span style="top:153px;left:30px; ">120</span>
+									<span style="top:180px;left:30px; ">100</span>
+									<span style="top:207px;left:37px; ">80</span>
+									<span style="top:230px;left:37px; ">60</span>
+								</div>
+								<span class="table_day" style="left:95px;">03-04</span>
+								<span class="table_day" style="left:201px;">03-04</span>
+								<span class="table_day" style="left:307px;">03-08</span>
+								<span class="table_day" style="left:412px;">03-12</span>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="con_rgt">
+			<div class="con_rgt_top">
+				<h3><img src="images/king.png">运动达人榜</h3>
+				<ul>
+					<li>昨天</li>
+					<li class="con_active">今天</li>
+					<li>7天</li>
+					<li>所有</li>
+				</ul>
+				<div class="all" style="display:none">
+					<div class="details">
+						<span class="num">1</span>
+						<i>
+							 <img src="images/24a67304-205d-4bac-ad89-dd507bccf385.jpg"/>
+						</i>
+						<div class="name" style="margin-right:38px;">
+							<p>楞子<span>155.17公里</span></p>
+							<div class="progress">
+								<div class="bar"></div>
+							</div>
+						</div>
+					</div>
+					<div class="details">
+						<span class="num">2</span>
+						<i>
+							<img src="images/pic1.jpg"/>
+						</i>
+						<div class="name">
+							<p>小星星<span>96.79公里</span></p>
+							<div class="progress">
+								<div class="bar"></div>
+							</div>
+						</div>
+					</div>
+					<div class="details">
+						<span class="num">3</span>
+						<i>
+							<img src="images/pic1.jpg"/>
+						</i>
+						<div class="name" style="margin-right:38px;">
+							<p>小魏<span>15.77公里</span></p>
+							<div class="progress">
+								<div class="bar"></div>
+							</div>
+						</div>
+					</div>
+					<div class="details">
+						<span class="num">4</span>
+						<i>
+							<img src="images/pic1.jpg"/>
+						</i>
+						<div class="name">
+							<p>田晨苑<span>11.13公里</span></p>
+							<div class="progress">
+								<div class="bar"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="con_rgt_grade">
+				<h3>本周成绩</h3>
+				<div class="grade_pic">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg"height="160" width="298">
+						<path  d="M149,15L149,37A43,43,0,0,1,189.8954302006916,66.71226924187727L210.818673559185,59.91389536562842A65,65,0,0,0,149,15" style="fill:#7dbe0f;stroke:#ffffff" />
+						<path  d="M210.818673559185,59.91389536562842L189.8954302006916,66.71226924187727A43,43,0,1,1,149,37L149,15A65,65,0,1,0,210.818673559185,59.91389536562842" style="fill:#f09f11;stroke:#ffffff"/>
+					</svg>
+					<div class="pic_title">
+						<h3>20%</h3>
+						<p>计划完成度</p>
+					</div>
+				</div>
+				<div class="grade_show clearfix">
+					<div>
+						<span class="label">长辈关爱</span>
+						<div class="grade_show_pic"></div><span class="num">4次/周</span>
+					</div>
+					<div>
+						<span class="label">晚辈关爱</span>
+						<div class="grade_show_pic"></div><span class="num">3次/周</span>
+					</div>
+					<div>
+						<span class="label">夫妻浪漫</span>
+						<div class="grade_show_pic"></div><span class="num">4次/周</span>
+					</div>
+					<div>
+						<span class="label" style="margin-left:2.3em;">步行</span>
+						<div class="grade_show_pic"></div><span class="num">12公里/周</span>
+					</div>
+					<div>
+						<span class="label" style="margin-left:2.3em;">跑步</span>
+						<div class="grade_show_pic"></div><span class="num">22公里/周</span>
+					</div>
+					<div>
+						<span class="label" style="margin-left:2.3em;">骑行</span>
+						<div class="grade_show_pic"></div><span class="num">33公里/周</span>
+					</div>
+					<div>
+						<span class="label" style="margin-left:2.3em;">篮球</span>
+						<div class="grade_show_pic"></div><span class="num">3次/周</span>
+					</div>
+					<div>
+						<span class="label" style="margin-left:2.3em;">控烟</span>
+						<div class="grade_show_pic"></div><span class="num">1盒/周</span>
+					</div>
+					<div>
+						<span class="label" style="margin-left:2.3em;">限酒</span>
+						<div class="grade_show_pic"></div><span class="num">4次/周</span>
+					</div>
+					<div>
+						<span class="label" style="margin-left:2.3em;">电影</span>
+						<div class="grade_show_pic"></div><span class="num">2次/周</span>
+					</div>
+				</div>
+			</div>
+			<div class="psg">
+				<h4>健康小贴士</h4>
+				<p><a target="_blank" href="http://www.jk189.net/mobileapi/newsDetail.do?newsId=590">春天，我们去野外摘野菜</a></p>
+				<p>野菜，我们就搁置与摊开在野外在旮旯，任尘起尘落，任你春里做驿亭来栖。春吃野菜对身体是很好的。他们是那么的净洁那么的默默无闻，是那么的不点唇不描鬓，他们还是最初的入尘入世的净然。</p>
+				<p><a target="_blank" href="http://www.jk189.net/mobileapi/newsDetail.do?newsId=589">最美不过九如山 | 自助游攻略</a></p>
+				<p>到山水间，呼吸清新的空气；于美食中顺应自然的平衡；世外良辰美景，莫辜负大好青春；在山水中，开启你的春季养生之旅吧！</p>
+				<p><a target="_blank" href="http://www.jk189.net/mobileapi/newsDetail.do?newsId=588">夜读 | 今晚，和繁星相对</a></p>
+				<p>今晚20:30，由世界自然基金会（WWF）倡导的2015年“地球一小时”环保活动，将在全球各地展开，中国区的主题为“能见蔚蓝”。</p>
+			</div>
+		</div>
+		
+	</div>
+	<div class="footer">
+		<p class="foot_link">
+			<a target="_blank" href="http://www.jk189.net/footer/aboutUs.do">关于我们</a> 
+			<a target="_blank" href="http://www.jk189.net/footer/contactUs.do">联系我们</a>
+		</p>
+		<p class="foot">Copyright &copy 2015  爱健康管理平台</p>
+	</div>
+	<script src="menu.js"></script>
+	<script src="tabOne.js"></script>
+    <script src="tabTwo.js"></script>
+    <script src="tabThree.js"></script>
+    <script src="hover.js"></script>
+    <script src="tabFive.js"></script>
+</body>
+</html>

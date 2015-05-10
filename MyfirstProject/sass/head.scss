@@ -1,0 +1,132 @@
+@import "compass/utilities/general/clearfix";
+@import "compass/css3";
+//@import "compass/css3/animation";
+//@import "compass/css3/border-radius";
+//@import "compass/css3/transition";
+ *{
+	margin:0;
+	padding:0;
+	font-family: microsoft yahei,tahoma,arial,\5b8b\4f53,sans-serif !important;
+	font-weight:normal;
+}
+ul,ol{
+	list-style:none;
+}
+.clearfix{
+	@include clearfix;
+}
+body{
+	background-color:#f8faf3;
+}
+.header{
+	background-color:#669900;
+	border-bottom:3px solid #bed299;
+	.Main_header{
+		margin:0 auto;
+		width: 80%;
+		.logo{
+			float:left;
+			width: 11%;
+			margin-top:14px;
+		}
+		.Tab_head{
+			margin-left: 135px;
+			.h_active{
+				background:#507110 !important;
+			}
+			li{
+				display:inline-block;
+				font-size:17px;
+				color:white;
+				margin:16px 0.5px;
+				@include border-radius(17px);
+				padding:5px 19px;
+				&:hover{
+					background-color:rgba(0,0,0,0.1);
+				}
+				a{
+					color:#fff;
+					text-decoration:none;
+				}
+			}
+		}
+	}
+}
+
+.user_msg{
+	float:right;
+	position: relative;
+    top: -39px;
+}
+.user_msg_d{
+	float: right;
+	width: 8px;
+	height: 8px;
+	background:#f4aa28;
+	@include border-radius(6px);
+	position: relative;
+	top:-42px;
+	left:28px;
+}
+.user{
+	position: relative;
+	.user_main{
+		background-color:#c0d29e;
+		width: 16%;
+		float:right;
+		position:relative;
+		top: -53px;
+		@include border-radius(23px);
+		margin-right: 6px;
+		.user_pic{
+			float:left;
+			width:36px;
+			margin:5px;
+			@include border-radius(50%);
+		}
+		.user_name{
+			padding-left: 55px;
+		    font-size: 15px;
+			color: #709e18;
+			margin-top: 13px;
+			cursor: pointer;
+		}
+		.user_more{
+			position:relative;
+			top: -11px;
+		    left: -13px;
+			float:right;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 8px 7px 0 7px;
+			border-color: #709e18 transparent transparent transparent;
+		}
+	}
+	.user_hide{
+		display:none;
+		position:absolute;
+		top: -10px;
+		right: 50px;
+		z-index:1;
+		background:#fff;
+		ul{
+			li{
+				font-size:11px;
+				margin:17px 50px 25px 25px;
+				a{
+					text-decoration:none;
+					color:#666;
+					&:hover{
+						color:#85c51f;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+@import "main_left.scss";
+@import "main_right.scss";
+@import "foot.scss";

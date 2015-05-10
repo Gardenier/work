@@ -1,0 +1,26 @@
+.footer{
+	border-top:5px solid #709e18;
+	margin-top:50px;
+	width: 100%;
+	height: 100px;
+	background:#c9d9b3;
+	.foot_link{
+		padding-top:10px;
+	}
+	.foot{
+		color:#666;
+		font-size:12px;
+	}
+	p{
+		text-align:center;
+		margin:10px 0;
+		a{
+			font-family:"SimSun" !important;
+			text-decoration:none;
+			color:#709e18;
+			font-size:18px;
+			text-align:center;
+			margin-right:26px;
+		}
+	}
+}
